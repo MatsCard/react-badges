@@ -39,10 +39,10 @@ function BadgeDetails(props) {
       <div className="">
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-sm-6 col-12">
               <Badge firstName={badge.firstName} lastName={badge.lastName} email={badge.email} twitter={badge.twitter} jobTitle={badge.jobTitle} />
             </div>
-            <div className="col-6 BadgeDetails__hero-attendant-name">
+            <div className="col-sm-6 col-12 BadgeDetails__hero-attendant-name">
               <h2>Actions</h2>
               <div>
 

@@ -2,7 +2,6 @@ import React from 'react';
 import Badge from '../components/Badge';
 import BadgeForm from '../components/BadgeForm';
 import PageLoading from '../components/PageLoading';
-import PageError from '../components/PageError';
 import api from '../api';
 import header from '../images/platziconf-logo.svg'
 import './styles/BadgeEdit.css';
@@ -77,7 +76,7 @@ class BadgeEdit extends React.Component {
 
       <div className="container">
         <div className="row">
-          <div className="col s-6">
+          <div className="col col-sm-6 col-12 ">
             <Badge 
             firstName={this.state.form.firstName || "FIRST_NAME"}
             lastName={this.state.form.lastName || "LAST_NAME"}
@@ -87,7 +86,7 @@ class BadgeEdit extends React.Component {
             avatarUrl="https:/www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
             />
           </div>
-          <div className="col s-6">
+          <div className="col col-sm-6 col-12 ">
             
             <h1>Edit Attendant</h1>
             <BadgeForm 
@@ -103,3 +102,4 @@ class BadgeEdit extends React.Component {
 }
 
 export default BadgeEdit;
+
